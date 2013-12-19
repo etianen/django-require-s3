@@ -17,10 +17,11 @@ setup(
     packages = [
         "require_s3",
     ],
-    zip_safe = True,
+    zip_safe = False,
     install_requires = [
         "django-require",
         "django-storages",
+        "boto",
     ],
     classifiers = [
         "Development Status :: 5 - Production/Stable",

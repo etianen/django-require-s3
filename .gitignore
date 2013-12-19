@@ -10,3 +10,5 @@ Thumbs.db
 dist
 build
 MANIFEST
+django_require_s3.egg-info/
+
