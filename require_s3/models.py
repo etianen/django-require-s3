@@ -1,0 +1,1 @@
+# Dummy models.py for test detection in Django <= 1.5.x.
