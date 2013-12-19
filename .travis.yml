@@ -1,0 +1,15 @@
+language: python
+python:
+  - 2.7
+  - 2.6
+  - 3.3
+  - 3.2
+env:
+  - DJANGO=django==1.5.5
+  - DJANGO=django==1.6
+install:
+  - pip install $DJANGO
+  - python setup.py -q install
+script: cd require_s3_test && python manage.py test require_s3
+notifications:
+  email: false
