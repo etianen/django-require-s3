@@ -17,6 +17,11 @@ setup(
     packages = [
         "require_s3",
     ],
+    zip_safe = True,
+    install_requires = [
+        "django-require",
+        "django-storages",
+    ],
     classifiers = [
         "Development Status :: 5 - Production/Stable",
         "Environment :: Web Environment",
