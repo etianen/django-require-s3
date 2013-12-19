@@ -18,8 +18,7 @@ class FolderNameHackMixin(object):
 class OptimizedStaticFilesStorage(FolderNameHackMixin, OptimizedFilesMixin, S3BotoStorage):
     
     """
-    A storage backend that optimizes with RequireJS, applies a cached MD5 suffix,
-    and stores the result on S3.
+    A storage backend that optimizes with RequireJS and stores the result on S3.
     """
 
 
