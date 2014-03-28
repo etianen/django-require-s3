@@ -1,17 +1,17 @@
 language: python
 python:
-  - 2.7
-  - 2.6
+- 2.7
+- 2.6
 env:
   global:
-    - secure: "UMBUAzpM8HKg7MuW5ADmwoQRC6LYuxEHMbA2wbWY0bIfAVN/t+AtL0WTvtC6gpMoJ7Jg93ESvbbEdI1gHEPMb47o5fxn8s9B9AZSUKRVYWICY1Gug0V3KOiHUufk2sM5uqgtmAg9iN9+Lr6zVdqzZKImZ3IohLz19tnYkOga9kA="
-    - secure: "saiXrqNXxiD9v51TNmfpXRqF3Dea7656zfCd0jWGsV3fc8PZnkoxZOJduV8e8My0s0pf77Xp+2hFfqZPvZkU1Cj6w/4/fHUpdnRp/bXwr39zH9/dhTQ+ecbaTNy912dhgeYyfMcoB9GGg+9DKUqnTIdU8dic3Vfng1Bzc5uglu4="
+  - secure: CuedDtWbWeL3ha7qABiO7Rcfd+mCaCPCN0yjlEeSELYGfPfcr73PPJ58DhtUmsdhWFtIvrr5Zp35Xha7o2IzHy62ajHN3Zwl3y3NYrsjKfzwKlCP4hZLg4BU24NLYJM4NgMLOH+YMr6J6ri+cn3ZOSlCQ4e7Cfl9OIu6esgdTZw=
+  - secure: fM5mjrAsX93Ahqudv4hC7VoVei9UXBbOxLvC22pNxooJvyo6CwY1N7eJbsicpLo/bXfpRhcuTT8UUZzgFpZOgD0zOlfqdvMyuA9u8ZgLwXW5u9GCvgOoZycRGsMxFfqgz41OaP6XbDFMkfoJcvGuuqTD66mtb5KhHz8P4+1oqHg=
   matrix:
-    - DJANGO=django==1.5.5
-    - DJANGO=django==1.6
+  - DJANGO=django==1.5.5
+  - DJANGO=django==1.6
 install:
-  - pip install $DJANGO
-  - python setup.py -q install
+- pip install $DJANGO
+- python setup.py -q install
 script: cd require_s3_test && python manage.py test require_s3
 notifications:
   email: false
